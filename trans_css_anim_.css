@@ -1,0 +1,166 @@
+/* TRANSIION SECTION */
+/* text, button and image */
+
+#tran_section{
+    background-color: lightblue;
+
+}
+
+h2 {
+    text-align: center;
+
+
+
+}
+
+#img{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 95px;
+    transition-property: backgroud-color, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: linear; 
+}
+
+#img:hover{
+    background-color: rgb(200, 200, 50);
+    border-radius: 50%;
+}
+
+.transit{
+    background-color: lime;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 95px;
+    text-align: center; 
+    transition-property: backgroud-color, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: linear; 
+    width: 95px;
+    float: right;
+}
+
+.transit:hover{
+    background-color: rgb(200, 200, 50);
+    border-radius: 50%;
+}
+
+#text{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 95px;
+    transition-property: backgroud-color, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: linear; 
+    float:inline-end;
+}
+
+#text:hover{
+    color: rgb(200, 200, 50);
+    border-radius: 50%;
+}
+
+.btn{
+    border:0;
+    border-radius: 4px;
+    background:yellowgreen;
+    cursor: pointer;
+    box-shadow: 0 5px 0;
+    margin: 12px 20px;
+    transition: all 0.2s linear;
+    float:right;
+}
+
+.btn:active{
+    box-shadow: 0 5px 0 red;
+    transform: translateY(3px);
+}
+
+/* ANIMATION SECTION */
+/* Heart animation and image rotation*/
+
+#anim_section {
+    text-align: center; 
+    padding: 20px;
+    background-color:rosybrown;     
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    transform: rotate(45deg);
+    animation: beat 1s infinite;
+    margin: 20px auto;
+    float: left;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -50px; 
+    left: 0;    
+}
+
+.heart::after {
+    left: -50px; 
+    top: 0;     
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1) rotate(45deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(45deg);
+    }
+}
+
+/* Image rotation*/
+#rotate {
+    width: 100px; 
+    height: auto; 
+    animation: rotate 2s infinite linear;
+    margin: 20px auto; 
+    display: block;
+    float:right;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Image Bounce*/
+.bounce {
+    animation: bounce 1s infinite;
+    width: 100px; 
+    height: auto; 
+    margin-left: 20px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+}

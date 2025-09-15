@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Animation</title>
+    <link rel = "stylesheet" href = "trans_css_anim_.css">
+    <link rel = "stylesheet" href = "anim_funct.css">
+</head>
+<body>
+    <section id = "tran_section">
+        <div>
+            <h2>Transition Demo</h2>
+            <img id ="img" src="img4.jpg">
+            <div class ="transit">BOX</div>
+            <p id = "text"> I am for tranformation</p>
+            <button class = "btn">Button</button>
+        </div>
+    </section>
+    <section id="anim_section">
+        <div>
+            <h2>Animation with KeyFrames Demo</h2>
+            <div class="heart"></div>
+            <img id="rotate" src="img4.jpg" alt="Image">
+            <img class="bounce" src="img4.jpg" alt="Image">
+        </div>
+    </section>
+    <section id ="anim_funct">
+        <div>
+            <h2>This is animation with function section</h2>
+            <div class="ball" id = "ball"></div>
+            <button onclick ="play()">play</button>
+            <button onclick ="pause()">pause</button>
+        </div>
+        <div id="calculator">
+            <h2>This is function that triger value</h2>
+            <input type="number" id="input1" placeholder="Enter first number" />
+            <input type="number" id="input2" placeholder="Enter second number" />
+            <button id="calculate-btn">Calculate</button>
+            <div id="result"></div>
+        </div>
+        <div>
+             <h1>Local vs Global Scope</h1>
+             <button id="show-global">Show Global Variable</button>
+             <button id="show-local">Show Local Variable</button>
+             <div id="output"></div>
+        </div>
+    </section>
+    <script src="anim_funct.js"></script>
+</body>
+</html>
